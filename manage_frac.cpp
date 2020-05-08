@@ -1,7 +1,4 @@
 #include <RcppArmadillo.h>
-#include <algorithm>
-#include <math.h>
-
 #include "hierarchy_fix_span.h"
 
 // a function to model the management fraction of employment
@@ -10,7 +7,6 @@
 using namespace std;
 
 // [[Rcpp::depends(RcppArmadillo)]]
-// [[Rcpp::plugins(cpp11)]]
 // [[Rcpp::export]]
 
 double manager_frac(const arma::vec &firm_vec,
